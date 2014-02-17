@@ -1,0 +1,98 @@
+//  nib folder is located in static/css/
+@import('nib');
+
+
+//  load opensans from google fonts (maybe the overused font in the world)
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,600,600');
+
+
+/*
+
+  // custom webfonts (put them in a folder called 'font' in public)
+  // be sure to got .eot, .woff, .ttf and .svg font file
+  // use fontsquirrel or another online webfont generator
+
+imported-fonts(_family, _directory, _filename, _weight, _style)
+  font-family _family
+  src url(_directory+_filename+'.eot')
+  src url(_directory+_filename+'.eot?#iefix') format('embedded-opentype'), url(_directory+_filename+'.woff') format('woff'), url(_directory+_filename+'.ttf') format('truetype'), url(_directory+_filename+'.svg#'+_family) format('svg')
+  font-weight _weight
+  font-style _style
+
+
+  // example use
+
+@font-face {
+  imported-fonts('SourceSansPro','../font/','SourceSansPro-Regular-webfont',200,normal)
+}
+
+*/
+
+
+//  - some useful vars
+
+//  - colors
+_black = #000
+_notSoBlack = #333
+_white = #fff
+_veryLightGreen = #FCFFF5
+_green = #D1DBBD
+_vomitGreen = #91AA9D
+_darkGreen = #3E606F
+_satanGreen = #193441
+//  - widths, heights or anything you want here
+_containerWidth = 960px
+
+
+
+// some useful classes
+.tl
+  text-align left
+
+.tc
+  text-align center
+
+.tr
+  text-align right
+
+
+
+// main style
+html,
+body
+  height 100%
+
+body
+  font-family 'Open Sans', 'Lucida Grande', Helvetica, Arial, sans-serif
+  font-weight 400
+  color _notSoBlack
+  background _white
+
+  header
+    min-height 90%
+    height 90%
+
+
+  header,
+  #content,
+  footer
+    & > .content
+      width _containerWidth
+      margin 0 auto
+
+
+//  - media queries -
+@media screen and (max-width: 959px)
+  //  - css here
+
+@media screen and (max-width: 767px)
+  //  - css here
+  _containerWidth = 100%
+
+  body
+
+    header,
+    #content,
+    footer
+      & > .content
+        width _containerWidth
