@@ -1,0 +1,12 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,600,600");
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+.gmnoprint,.gm-style-cc{display:none !important}
+html,body{height:100%}
+body{font-family:'Open Sans','Lucida Grande',Helvetica,Arial,sans-serif;font-weight:400;color:#333;background:#fff;}
+body header{min-height:90%;height:90%}
+body header > .content,body #content > .content,body footer > .content{width:960px;margin:0 auto}
+body #maps .single-map{width:100%;height:400px}
+@media screen and (max-width: 959px){}@media screen and (max-width: 767px){body header > .content,body #content > .content,body footer > .content{width:100%}
+}
