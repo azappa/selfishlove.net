@@ -3,7 +3,7 @@
 
 
 //  load opensans from google fonts (maybe the overused font in the world)
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,600,600');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 
 /*
@@ -44,8 +44,7 @@ _satanGreen = #193441
 _containerWidth = 960px
 
 
-
-// some useful classes
+//  some useful classes
 .tl
   text-align left
 
@@ -56,7 +55,24 @@ _containerWidth = 960px
   text-align right
 
 
+//  font classes
+.os
+  font-family 'Open Sans', 'Lucida Grande', Helvetica, Arial, sans-serif
+.w-300
+  font-weight 300
+.w-400
+  font-weight 400
+.w-600
+  font-weight 600
 
+
+//  setting right fonts in purecss grid
+.pure-g [class *='pure-u'],
+.pure-g-r [class*="pure-u"]
+  @extends .os
+
+
+//  hiding infos from gmaps
 .gmnoprint,
 .gm-style-cc
   display none!important
@@ -68,8 +84,7 @@ body
   height 100%
 
 body
-  font-family 'Open Sans', 'Lucida Grande', Helvetica, Arial, sans-serif
-  font-weight 400
+  @extends .os
   color _notSoBlack
   background _white
 
@@ -89,6 +104,10 @@ body
     .single-map
       width 100%
       height 400px
+      margin 0 auto
+    .padding
+      padding 10px
+      @extends .w-300
 
 
 //  - media queries -
