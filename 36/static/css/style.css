@@ -11,9 +11,29 @@ html,body{height:100%}
 body{font-weight:300;color:#333;background:#fff;}
 body header{min-height:531px;height:90%;background:url("../img/one.png") center no-repeat;width:100%}
 body header > .content,body #content > .content,body footer > .content{width:960px;margin:0 auto}
-body #maps .single-map{width:100%;height:400px;margin:0 auto}
+body #maps .map{width:100%;height:400px;margin:0 auto}
 body #maps .padding{padding:10px;}
+body #maps .single-place .places span{display:inline;font-size:24px;text-transform:uppercase;margin-right:10px;font-weight:400}
+body #maps .single-place h1,body #maps .single-place h4{margin:0;text-transform:uppercase;font-weight:300;text-align:center}
+body #maps .single-place h1{color:#999;font-size:48px;margin-bottom:0}
+body #maps .single-place h4{font-size:32px;margin-bottom:30px;border-bottom:3px solid #d6d6d6;padding-bottom:5px}
+body #maps .single-place#paris .places span.place-0{color:#c02942}
+body #maps .single-place#paris .places span.place-1{color:#ad253b}
+body #maps .single-place#paris .places span.place-2{color:#9a2135}
+body #maps .single-place#paris .places span.place-3{color:#861d2e}
+body #maps .single-place#paris .places span.place-4{color:#731928}
+body #maps .single-place#venezia .places span.place-0{color:#68b3af}
+body #maps .single-place#venezia .places span.place-1{color:#55a9a5}
+body #maps .single-place#venezia .places span.place-2{color:#4c9793}
+body #maps .single-place#venezia .places span.place-3{color:#428480}
+body #maps .single-place#venezia .places span.place-4{color:#39716e}
+body #maps .single-place#rovinj .places span.place-0{color:#c06c84}
+body #maps .single-place#rovinj .places span.place-1{color:#b75772}
+body #maps .single-place#rovinj .places span.place-2{color:#a84863}
+body #maps .single-place#rovinj .places span.place-3{color:#933f57}
+body #maps .single-place#rovinj .places span.place-4{color:#7e364b}
 body footer{background:#91aa9d;border-top:3px solid #6e8e7d;}
 body footer .content .padding{padding-top:20px;padding-bottom:20px;font-size:14px;font-weight:400;color:#fff;text-shadow:0 0 2px rgba(0,0,0,0.8)}
 @media screen and (max-width: 959px){}@media screen and (max-width: 767px){body header > .content,body #content > .content,body footer > .content{width:100%}
+body #maps .map{height:280px}
 }

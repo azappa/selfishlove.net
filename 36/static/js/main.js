@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function () {
       new google.maps.LatLng(45.081166, 13.638707)
     ]
     , mapZoom = [
-      14,
+      13,
       15,
       15
     ]
@@ -203,6 +203,7 @@ window.addEventListener('DOMContentLoaded', function () {
         panControl: false,
         mapTypeControl: false,
         scrollwheel: false,
+        draggable: false,
         keyboardShortcuts: false,
         //styles: i === 1 ? mapStyles[1] : mapStyles[0]
         styles: mapStyles[i]
@@ -219,6 +220,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
   _.each(mapIDs, function (el, i) {
     initializeMap(i);
+  });
+
+  _.each(document.querySelectorAll('#maps .places'), function (pl) {
+    _.each(pl.querySelectorAll('span'), function (sp, i) {
+      sp.classList.add('place-' + (i % 5));
+
+    });
   });
 
 });
