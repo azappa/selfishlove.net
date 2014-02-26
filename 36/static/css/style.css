@@ -8,10 +8,12 @@
 .w-600{font-weight:600}
 .gmnoprint,.gm-style-cc{display:none !important}
 html,body{height:100%}
-body{color:#333;background:#fff;}
-body header{min-height:90%;height:90%}
+body{font-weight:300;color:#333;background:#fff;}
+body header{min-height:531px;height:90%;background:url("../img/one.png") center no-repeat;width:100%}
 body header > .content,body #content > .content,body footer > .content{width:960px;margin:0 auto}
 body #maps .single-map{width:100%;height:400px;margin:0 auto}
 body #maps .padding{padding:10px;}
+body footer{background:#91aa9d;border-top:3px solid #6e8e7d;}
+body footer .content .padding{padding-top:20px;padding-bottom:20px;font-size:14px;font-weight:400;color:#fff;text-shadow:0 0 2px rgba(0,0,0,0.8)}
 @media screen and (max-width: 959px){}@media screen and (max-width: 767px){body header > .content,body #content > .content,body footer > .content{width:100%}
 }

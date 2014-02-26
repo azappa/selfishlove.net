@@ -85,13 +85,15 @@ body
 
 body
   @extends .os
+  font-weight 300
   color _notSoBlack
   background _white
 
   header
-    min-height 90%
+    min-height 531px
     height 90%
-
+    background url('../img/one.png') center no-repeat
+    width 100%
 
   header,
   #content,
@@ -108,6 +110,18 @@ body
     .padding
       padding 10px
       @extends .w-300
+
+  footer
+    background _vomitGreen
+    border-top 3px solid darken(_vomitGreen, 20%)
+    .content
+      .padding
+        padding-top 20px
+        padding-bottom 20px
+        font-size 14px
+        font-weight 400
+        color _white
+        text-shadow 0 0 2px rgba(_black, 0.8)
 
 
 //  - media queries -
