@@ -34,6 +34,7 @@ body #maps .single-place#rovinj .places span.place-3{color:#933f57}
 body #maps .single-place#rovinj .places span.place-4{color:#7e364b}
 body footer{background:#91aa9d;border-top:3px solid #6e8e7d;}
 body footer .content .padding{padding-top:10px;padding-bottom:10px;font-size:14px;font-weight:400;color:#fff;text-shadow:0 0 2px rgba(0,0,0,0.8)}
-@media screen and (max-width: 959px){}@media screen and (max-width: 767px){body header > .content,body #content > .content,body footer > .content{width:100%}
+@media screen and (max-width: 959px){}@media screen and (max-width: 767px){body header{min-height:285.5px;height:90%;background:url("../img/one.png") center no-repeat;width:100%;-webkit-background-size:152px 265.5px;-moz-background-size:152px 265.5px;background-size:152px 265.5px}
+body header > .content,body #content > .content,body footer > .content{width:100%}
 body #maps .map{height:280px}
 }
