@@ -1,0 +1,67 @@
+doctype html
+html
+
+  head
+    title x m a s 2 0 1 6
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+    link(rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css')
+    link(rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css')
+    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Inconsolata:400,700')
+    style(type='text/css')
+      :stylus
+        /* Spacer */
+        $spacer = 5, 10, 20, 30, 40
+        for _val in $spacer
+          .spacer-{ _val }
+            height ( _val * 1px )
+            clear both
+
+        html,
+        body
+          font-family 'Inconsolata', monospace
+        .black
+          color rgb(9, 50, 96)
+        .red
+          color rgb(188, 42, 84)
+
+        html
+          @extends .black
+        .p
+          padding 20px
+        .c
+          max-width 400px
+          margin 0 auto
+        .tc
+          text-align left
+        .tr
+          text-align right
+        .candy
+          width 80px
+          height auto
+          display block
+          margin 0 auto
+  body
+    .c
+      .p
+        .spacer-40
+        .tc
+          img.candy(src='imgs/_candycane.svg')
+        .spacer-10
+        :markdown-it(breaks='true', typographer='true', html='true')
+          Ciao tesorino,
+          &nbsp;&nbsp;un altro anno è passato, siamo a ben __cinque__ Natali assieme ormai!
+
+          Quest'anno poi è stato più impegnativo: siamo andati a vivere assieme (__<span class='red'><3</span>__), abbiamo messo il **nostro primo mattoncino** per una vita insieme ventiquattro ore su ventiquattro, hai cambiato lavoro e come ho visto ciò ha giovato ad entrambi; certo abbiamo fatto un po' di sacrifici ma **ne è valsa la pena**!
+
+          Il pensiero è per la tua nuova avventura lavorativa, spero diventerai una brillante donna in carriera! So che potrebbe essere costato un po' ma penso che tu te lo sia meritato, anche per la pazienza che hai con me tante volte per i lavori in casa (che comunque sto imparando a fare anche da solo __<span class='red'>:p</span>__).
+
+          Ricordati che puoi contare su di me __sempre__, in ogni momento perchè sennò cosa ci sto a fare?
+
+          __Buon Natale__,
+        .tr
+          :markdown-it(breaks='true', typographer='true', html='true')
+            _il tuo Zappy_
+        .spacer-10
+        img.candy(src='imgs/_treeornament.svg')
+        .spacer-40

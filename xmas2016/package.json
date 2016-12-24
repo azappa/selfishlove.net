@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "pug -w index.pug"
+  },
+  "devDependencies": {
+    "jstransformer-markdown-it": "^2.0.0",
+    "jstransformer-stylus": "^1.3.0",
+    "markdown-it": "^8.2.2",
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6",
+    "stylus": "^0.54.5"
+  }
+}
